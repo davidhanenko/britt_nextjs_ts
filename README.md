@@ -11,7 +11,7 @@ This is a simple Next.js application with JSON-server mock API.
 
 1. Clone the repository.
 
-    ```git clone https://github.com/davidhanenko/_________.git```
+    ```git clone https://github.com/davidhanenko/britt_nextjs_ts/.git```
 
 2. Navigate to the project directory.
 3. Install dependencies.
