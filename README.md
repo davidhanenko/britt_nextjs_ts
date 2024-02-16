@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a simple Next.js application with JSON-server mock API.
+
+## Built with
+
+- Next.js(13.5.6)
+- TypeScript
+- TailwindCSS
+- Json-server
 
 ## Getting Started
 
-First, run the development server:
+1. Clone the repository.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+    ```git clone https://github.com/davidhanenko/_________.git```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Navigate to the project directory.
+3. Install dependencies.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+    ```npm install```
+  
+4.  Start the development Next.js server concurrently with json-server.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+    ```npm run dev-server```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+5. Open your browser and navigate to http://localhost:3000 to view the application.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+   
+## Functionality Description:
 
-## Deploy on Vercel
+#### Dynamic Routing
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Route**: `/[userId]/page.tsx`
+- **Functionality**: Fetches and displays user profile details based on the ID of the selected user.
+- **Implementation**: Utilizes Next.js's file system-based routing by creating a page under `app/[userId]/page.tsx`. The Page component receives the user ID through route `params` and then passes it to the API fetching function as part of the URL.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+#### Server Action
+- **Location**: `[/app/actions.ts]`
+- **Functionality**:  Simulates a "like" action for a user profile by incrementing a like counter.
+- **Implementation**: Defined within the Next.js `"use server"` directive, saved in a separate file, and invoked from the client-side component event handler `onClick`. It accepts two arguments: `id` and `likes`, increments the like count based on the current amount of likes, and triggers route revalidating for an instant update. Two actions with identical functionality but different revalidation paths are presented.
+
+
+

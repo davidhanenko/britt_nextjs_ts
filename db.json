@@ -1,0 +1,74 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "likes": 167,
+      "username": "johndoe"
+    },
+    {
+      "id": "2",
+      "name": "Jane Smith",
+      "email": "jane.smith@example.com",
+      "likes": 214,
+      "username": "janesmith"
+    },
+    {
+      "id": "3",
+      "name": "Michael Johnson",
+      "email": "michael.johnson@example.com",
+      "likes": 94,
+      "username": "michaelj"
+    },
+    {
+      "id": "4",
+      "name": "Emily Brown",
+      "email": "emily.brown@example.com",
+      "likes": 314,
+      "username": "emilyb"
+    },
+    {
+      "id": "5",
+      "name": "David Wilson",
+      "email": "david.wilson@example.com",
+      "likes": 127,
+      "username": "davidw"
+    },
+    {
+      "id": "6",
+      "name": "Sarah Taylor",
+      "email": "sarah.taylor@example.com",
+      "likes": 291,
+      "username": "saraht"
+    },
+    {
+      "id": "7",
+      "name": "Robert Martinez",
+      "email": "robert.martinez@example.com",
+      "likes": 209,
+      "username": "robertm"
+    },
+    {
+      "id": "8",
+      "name": "Jennifer Lee",
+      "email": "jennifer.lee@example.com",
+      "likes": 256,
+      "username": "jenniferl"
+    },
+    {
+      "id": "9",
+      "name": "Daniel Garcia",
+      "email": "daniel.garcia@example.com",
+      "likes": 144,
+      "username": "danielg"
+    },
+    {
+      "id": "10",
+      "name": "Olivia Rodriguez",
+      "email": "olivia.rodriguez@example.com",
+      "likes": 233,
+      "username": "oliviar"
+    }
+  ]
+}
